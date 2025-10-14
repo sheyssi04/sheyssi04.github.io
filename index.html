@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming World</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #1b1b1b;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #0d0d0d;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 2px solid #ff4c4c;
+        }
+
+        header h1 {
+            color: #ff4c4c;
+            font-size: 2.5em;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff4c4c;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+
+        .games {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .game-card {
+            background-color: #2c2c2c;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .game-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(255, 76, 76, 0.5);
+        }
+
+        .game-card img {
+            width: 100%;
+            display: block;
+        }
+
+        .game-card h3 {
+            padding: 15px;
+            font-size: 1.2em;
+            text-align: center;
+        }
+
+        .game-card p {
+            padding: 0 15px 15px 15px;
+            text-align: center;
+            color: #ccc;
+        }
+
+        footer {
+            background-color: #0d0d0d;
+            text-align: center;
+            padding: 20px 0;
+            border-top: 2px solid #ff4c4c;
+            margin-top: 40px;
+        }
+
+        footer p {
+            color: #ff4c4c;
+        }
+
+        /* Botón de descarga estilo gaming */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #ff4c4c;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #ff1a1a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gaming World</h1>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Juegos</a>
+            <a href="#">Noticias</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2 style="text-align:center; margin-bottom:30px;">Juegos Destacados</h2>
+        <div class="games">
+            <div class="game-card">
+                <img src="https://via.placeholder.com/300x200.png?text=Juego+1" alt="Juego 1">
+                <h3>Cyber Adventure</h3>
+                <p>Explora un mundo futurista lleno de acción y aventuras épicas.</p>
+                <a href="#" class="btn">Descargar</a>
+            </div>
+            <div class="game-card">
+                <img src="https://via.placeholder.com/300x200.png?text=Juego+2" alt="Juego 2">
+                <h3>Fantasy Quest</h3>
+                <p>Embárcate en una misión mágica y derrota a los enemigos del reino.</p>
+                <a href="#" class="btn">Descargar</a>
+            </div>
+            <div class="game-card">
+                <img src="https://via.placeholder.com/300x200.png?text=Juego+3" alt="Juego 3">
+                <h3>Racing Mania</h3>
+                <p>Compite a toda velocidad en circuitos extremos y alcanza la victoria.</p>
+                <a href="#" class="btn">Descargar</a>
+            </div>
+            <div class="game-card">
+                <img src="https://via.placeholder.com/300x200.png?text=Juego+4" alt="Juego 4">
+                <h3>Space Invaders</h3>
+                <p>Defiende la galaxia de los invasores alienígenas en intensas batallas.</p>
+                <a href="#" class="btn">Descargar</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Gaming World. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
